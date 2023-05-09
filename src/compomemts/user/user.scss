@@ -1,0 +1,43 @@
+.user {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+
+  &__avatar {
+    margin-right: 0.75rem;
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    &__name {
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 21px;
+
+      letter-spacing: 0.01em;
+      color: #ffffff;
+    }
+
+    &__position {
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 18px;
+
+      letter-spacing: 0.01em;
+
+      color: #757575;
+    }
+  }
+}
+@media screen and (min-width: 576px) {
+  .user {
+    &__info {
+      &__name {
+        color: #000000;
+      }
+    }
+  }
+}

@@ -1,0 +1,27 @@
+.category {
+  display: block;
+  margin-right: 1rem;
+  &__title {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+
+    letter-spacing: -0.01em;
+
+    color: var(--fourText);
+    text-align: start;
+  }
+  &__title {
+    height: 2rem;
+  }
+}
+
+@media screen and (min-width: 576px) {
+  .category {
+    display: none;
+    &__title {
+      display: block;
+      grid-template-columns: repeat(6, 1fr);
+    }
+  }
+}

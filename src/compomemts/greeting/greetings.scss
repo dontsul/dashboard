@@ -1,0 +1,63 @@
+.greetings {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+  margin-bottom: 3.2rem;
+  margin-top: 5rem;
+
+  color: #000000;
+
+  &__hand {
+    animation-name: wave;
+    animation-fill-mode: forwards;
+    animation-duration: 6s;
+  }
+}
+
+@keyframes wave {
+  0% {
+    transform: rotate(-20deg);
+  }
+  10% {
+    transform: rotate(80deg);
+  }
+  20% {
+    transform: rotate(-20deg);
+  }
+  30% {
+    transform: rotate(80deg);
+  }
+  40% {
+    transform: rotate(-20deg);
+  }
+  50% {
+    transform: rotate(80deg);
+  }
+
+  60% {
+    transform: rotate(-20deg);
+  }
+  70% {
+    transform: rotate(80deg);
+  }
+  80% {
+    transform: rotate(-20deg);
+  }
+  90% {
+    transform: rotate(20deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@media screen and (min-width: 576px) {
+  .greetings {
+    margin-top: 0;
+  }
+}

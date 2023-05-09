@@ -1,0 +1,44 @@
+.layout {
+  display: grid;
+  grid-template-rows: repeat(auto, 1fr);
+  grid-template-areas: 'sidebar body body ';
+  position: relative;
+}
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
+  grid-area: header;
+  position: fixed;
+  background-color: #ffffff;
+  width: 100%;
+  opacity: 1;
+  padding: 1.5rem;
+  z-index: 100;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.body {
+  grid-area: body;
+}
+.sidebar {
+  grid-area: sidebar;
+}
+
+.menuHidden {
+  overflow: hidden;
+}
+
+@media screen and (min-width: 576px) {
+  .layout {
+    display: grid;
+    grid-template-rows: repeat(auto, 1fr);
+    grid-template-areas:
+      'header header header header'
+      'sidebar body body body';
+  }
+  .header {
+    display: none;
+  }
+}

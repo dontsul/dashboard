@@ -1,0 +1,54 @@
+.item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.75rem;
+  border-radius: 8px;
+
+  &__title {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  &__svg {
+    display: flex;
+    align-items: center;
+    margin-right: 1rem;
+  }
+  &__text {
+    color: var(--thirdText);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+
+    letter-spacing: -0.01em;
+  }
+}
+.item:hover {
+  background: var(--thirdBackground);
+}
+
+.item:hover .item__text {
+  color: #ffffff;
+}
+.item:hover .item__svg path {
+  stroke: #ffffff;
+}
+.item:hover .item__arrow path {
+  stroke: #ffffff;
+}
+
+.active {
+  background: var(--thirdBackground);
+  color: red;
+
+  .item__text {
+    color: #ffffff;
+  }
+  .item__svg path {
+    stroke: #ffffff;
+  }
+  .item__arrow path {
+    stroke: #ffffff;
+  }
+}

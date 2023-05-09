@@ -1,0 +1,27 @@
+.headerTable {
+  display: none;
+  gap: 3rem;
+  padding-bottom: 0.875rem;
+  border-bottom: 1px solid #eeeeee;
+
+  &__title {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+
+    letter-spacing: -0.01em;
+
+    color: var(--fourText);
+    text-align: start;
+  }
+  &__title:last-child {
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 576px) {
+  .headerTable {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+  }
+}

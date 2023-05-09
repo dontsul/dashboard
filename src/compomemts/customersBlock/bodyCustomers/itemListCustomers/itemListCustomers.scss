@@ -1,0 +1,40 @@
+.wratCustomer {
+  display: flex;
+  align-items: center;
+}
+
+.customer {
+  display: grid;
+  grid-template-columns: 1fr;
+
+  border-bottom: 1px solid #eeeeee;
+  padding: 1.25rem 0;
+
+  justify-content: space-between;
+
+  &__status {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+}
+
+.customer div {
+  height: 2rem;
+}
+
+@media screen and (min-width: 576px) {
+  .wratCustomer {
+    display: inherit;
+    align-items: inherit;
+  }
+  .customer {
+    grid-template-columns: repeat(6, 1fr);
+    gap: 3rem;
+    &__status {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+    }
+  }
+}
