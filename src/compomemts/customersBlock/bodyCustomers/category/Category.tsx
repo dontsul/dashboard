@@ -9,7 +9,11 @@ export const Category: FC<CategoryProps> = ({ content }) => {
     <div className="category">
       {content &&
         content.map((item) => {
-          return <div className="category__title">{item}</div>;
+          return (
+            <div key={item} className="category__title">
+              {item}
+            </div>
+          );
         })}
     </div>
   );
